@@ -40,8 +40,10 @@ body{
   width: 40%;
 }
 .box-login{
+  background-color: var(--p-01);
+}
+form{
   flex-direction: column;
-  align-items: center;
   display: flex;
 }
 /*Tudo sobre o dropdown --- do SIGNUP  */
