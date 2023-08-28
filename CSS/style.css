@@ -26,6 +26,24 @@ body{
         width: 100%;
         height: 100vh;
 }
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column-left{
+  text-align: center;
+  width: 60%;
+}
+.column-right{
+  text-align: center;
+  width: 40%;
+}
+.box-login{
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
 /*Tudo sobre o dropdown --- do SIGNUP  */
 
 .dropdown {
