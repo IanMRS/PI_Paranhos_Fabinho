@@ -9,48 +9,7 @@
 </head>
 <body>
           <div class="container">
-                        <div class="column-right">
-            
-                            <h2 class="title ">Olá novamente!</h2>
-                            <p class="">Efetue seu login ao lado</p>
-                            <br>
-                            <p class="">Caso ainda não tenha efetuado seu cadastro, aperte no botão abiaxo</p>
-                            <a href="">sign up</a>
-                        </div> 
-            
-                        <div class="second-column signin">
-                            <h2 class="title title-second">Efetue seu login</h2>
-                            <p class="description description-second">Número de SIAPE ou Matrícula:</p>
-                            <form class="form">
-                            
-                                <label class="label-input" for="">
-                                    <i class="far fa-envelope icon-modify"></i>
-                                    <input type="email" placeholder="E-mail">
-                                </label>
-                            
-                                <label class="label-input" for="">
-                                    <i class="fas fa-lock icon-modify"></i>
-                                    <input type="password" placeholder="Senha">
-                                </label>
-                            
-                                <a class="password" href="#">forgot your password?</a>
-                                <button class="btn btn-second">sign in</button>
-                            </form>
-                        </div><!-- second column -->
-                    </div><!-- first content -->
-            
-            
-                    <div class="content second-content">
-                        <div class="first-column">
-                            <h2 class="title title-primary">seja bem-vindx!</h2>
-                            <p class="description description-primary">Realize seu cadastro selecionando qual a seu ...</p>
-                            <br>
-                            <p class="description description-primary">Caso já tenha login, selecione botão abaixo</p>
-                            <button id="signin" class="btn btn-primary">sign in</button>
-            
-                        </div>
-                        
-            <div class="second-column create">
+            <div class="column-left">
                 <div class="linha"></div>
                 <div class="dropdown">
                 <button class="dropdown-button" onclick="toggleDropdown()">DISCENTE</button>
@@ -60,12 +19,10 @@
                       <div class="input">
                         <label>Nome:</label>
                         <input type="text" name="nome" required>
-                        
                       </div>
                       <div class="input">
                         <label>E-mail institucional:</label>
-                        <input type="email" name="email" required>
-                        
+                        <input type="email" name="email" required>  
                       </div>
                       <div class="input">
                         <label for="CURSO">Cursos:</label>
@@ -86,17 +43,14 @@
                           <option value="32">32</option>
                           <option value="41">41</option>
                         </select>
-                        
                       </div>
                       <div class="input">
                         <label>Telefone:</label>
                         <input type="text" name="tell" required>
-                        
                       </div>
                       <div class="input">
                         <label>N° de Matrícula:</label>
-                        <input type="text" name="matricula" required>
-                        
+                        <input type="text" name="matricula" required>   
                       </div>
                       <div class="input">
                         <label for="senha">Senha:</label>
@@ -165,9 +119,11 @@
                       </div>
             
             
-                        </div><!-- second column -->
-                    </div><!-- second-content -->
-                </div>
+                        </div><!-- column-left -->
+                    <div class="column-right">
+                      <p></p>
+                    </div>
+                    </div><!-- container -->
                 <script src="JS/comeco.js"></script>
           
 </body>
