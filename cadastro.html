@@ -9,6 +9,7 @@
 </head>
 <body>
           <div class="container">
+            <div class="box-cadastro">
             <div class="column-left">
                 <div class="linha"></div>
                 <div class="dropdown">
@@ -16,15 +17,15 @@
                 <div class="dropdown-content" id="dropdown-content-1">
                   <form method="post" action="signup_discente.php">
                     <div class="box_signup">
-                      <div class="input">
+                      <div class="input-drop">
                         <label>Nome:</label>
                         <input type="text" name="nome" required>
                       </div>
-                      <div class="input">
+                      <div class="input-drop">
                         <label>E-mail institucional:</label>
                         <input type="email" name="email" required>  
                       </div>
-                      <div class="input">
+                      <div class="input-drop">
                         <label for="CURSO">Cursos:</label>
                         <select id="cursos" name="cursos" required>
                           <option value="EI">Informática</option>
@@ -32,7 +33,7 @@
                           <option value="EMA">Meio-Ambiente</option>
                         </select>
                       </div>
-                      <div class="input">
+                      <div class="input-drop">
                         <label>Turma:</label>
                         <select id="turma" name="turma" required>
                           <option value="11">11</option>
@@ -44,15 +45,15 @@
                           <option value="41">41</option>
                         </select>
                       </div>
-                      <div class="input">
+                      <div class="input-drop">
                         <label>Telefone:</label>
                         <input type="text" name="tell" required>
                       </div>
-                      <div class="input">
+                      <div class="input-drop">
                         <label>N° de Matrícula:</label>
                         <input type="text" name="matricula" required>   
                       </div>
-                      <div class="input">
+                      <div class="input-drop">
                         <label for="senha">Senha:</label>
                         <input type="password" id="senha" name="senha" required>
                         
@@ -72,23 +73,23 @@
                 <div class="dropdown-content" id="dropdown-content-2"> <!--As duas dropdowns agora têm seus próprios IDs únicos: dropdown-content-1 e dropdown-content-2-->
                   <form method="post" action="signup_docente.php">
                     <div class="box_signup">
-                      <div class="input">
+                      <div class="input-drop">
                         <label>SIAPE:</label>
                         <input type="text" name="SIAPE" required>
                         
                       </div>
-                      <div class="input">
+                      <div class="input-drop">
                         <label>Nome:</label>
                         <input type="text" name="nome" required>
                         
                       </div>
-                      <div class="input">
+                      <div class="input-drop">
                         <label>E-mail:</label>
             
                                 <input type="email" name="email" required>
                                 
                               </div>
-                              <div class="input">
+                              <div class="input-drop">
                                 <label for="curso">Curso responsável:</label>
                                 <select id="cursos" name="cursos" required>
                                   <option value="EI">Informática</option>
@@ -97,12 +98,12 @@
                                 </select>
                                 
                               </div>
-                              <div class="input">
+                              <div class="input-drop">
                                 <label>Nome de Usuário:</label>
                                 <input type="text" name="usario" required>
                                 
                               </div>
-                              <div class="input">
+                              <div class="input-drop">
                                 
                                 <label for="senha">Senha:</label>
                                 <input type="password" id="senha" name="senha" required>
@@ -117,6 +118,7 @@
                           </form>
                         </div>
                       </div>
+                    </div>
             
             
                         </div><!-- column-left -->

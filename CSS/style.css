@@ -19,35 +19,114 @@
        --p-14: rgba(21,126,40,255);
        --p-15: #7ED957;
        --p-16: #0097B2;
-
+       --p-17: #ffffff;
 }
 body{
-        background:linear-gradient(var(--p-16), var(--p-15)) ;
-        width: 100%;
-        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background:linear-gradient(var(--p-16), var(--p-15)) ;   
 }
 .container{
+  position: relative;
+  width: 750px;
+  height: 450px;
+  background: var(--p-17);
+  box-shadow: 1px 1px black;
+}
+.container .form-box{
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background:none;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  padding: 0 40px;
+  text-align: center;
+}
+.form-box h2{
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+}
+.form-box .input{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 10% 0;
+  background: none;
+}
+.input input{
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: solid 2px black;
+  border-radius: 8px;
+  outline: none;
+}
+.input label{
+  position: absolute;
+  top: -28%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: aqua;
+}
+.btn{
+position: relative;
+width: 100%;
+height: 45px;
+background-color: var(--p-01);
+border-radius: 20px;
+color: #fff;
+font-size: 16px;
+outline: none;
+cursor: pointer;
+}
+.form-box .links{
+  text-align: center;
+  margin: 20px 0 10px;
+}
+.links a{
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.links a:hover{
+  text-decoration: underline;
+}
+.container .column-right{
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  background: #0097B2;
+  right: 0;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.column-left{
   text-align: center;
-  width: 60%;
+  color: #fff;
 }
-.column-right{
-  text-align: center;
-  width: 40%;
+.column-right a{
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
 }
-.box-login{
-  background-color: var(--p-01);
+p{
+  padding: 0 20px;
 }
-form{
-  flex-direction: column;
-  display: flex;
+.column-right a:hover{
+  text-decoration: underline;
 }
-/*Tudo sobre o dropdown --- do SIGNUP  */
 
+/*Tudo sobre o dropdown --- do SIGNUP  */
 .dropdown {
           position: relative;
           display: inline-block;

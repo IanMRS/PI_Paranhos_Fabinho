@@ -9,35 +9,36 @@
 </head>
 <body>
           <div class="container">
-                <div class="column-left">
-                <div class="box-login">
-                    <h2 class="title">Efetue seu login</h2>
-                    <p class="">Número de SIAPE ou Matrícula:</p>
-                    <form class="form">
-                
-                              <label class="label-input" for="">
-                              <i class="far fa-envelope icon-modify"></i>
-                              <input type="email" placeholder="E-mail">
-                    </label>
-                
-                    <label class="label-input" for="">
-                        <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
-                    </label>
-                
-                    <a class="password" href="#">forgot your password?</a>
-                    <input type="submit">
-                </form>
-            </div>
+            <div class="form-box login">
+                <h2 class="title">Efetue seu login</h2>
+                <p class="">Número de SIAPE ou Matrícula:</p>
+                <form class="form">
+                    <div class="input">
+                        <input id="username" type="text" placeholder="Usuário" required>
+                        <label for="username">Usuário</label>
                     </div>
-                    <div class="column-right">
-                              <h2>Olá Novamente</h2>
-                              <p>Efeutue seu login ao lado</p>
-                              <br>
-                              <p>Mas, caso ainda não tenha efetuado seu cadastro, aperte no botão abiaxo</p>
-                              <a href="cadastro.html">Criar Conta</a>
+                    <!--<i class="far fa-envelope icon-modify"></i>-->
+                    <div class="input">
+                        <input id="password" type="password" placeholder="Senha" required>
+                        <label for="password">Senha</label>
                     </div>
-          </div>
+                    <!--<i class="fas fa-lock icon-modify"></i>-->
+
+                
+        <button type="submit" class="btn">Entrar</button>
+        <div class="links">
+            <a class="password" href="#">Esqueceu sua senha?</a>
+        </div>  
+    </form>
+</div>
+<div class="column-right">
+    <h2>Olá Novamente</h2>
+    <p>Efeutue seu login ao lado</p>
+    <br>
+    <p>Mas, caso ainda não tenha efetuado seu cadastro, aperte no botão abaixo</p>
+    <a href="cadastro.html">Criar Conta</a>
+</div>
+</div>
           
 </body>
 </html>
