@@ -8,6 +8,7 @@
 
 
   if($conexao){
+    if($usuario != ""  && $senha != ""){
 
         $sql = "SELECT * FROM cores WHERE SIAPE='$usuario' AND Senha='$senha' ";
         $res=mysqli_query($conexao, $sql);
@@ -22,6 +23,11 @@
             echo "ERRO NO LOGIN, USUARIO OU SENHA incorretos";
             echo "<a href = 'tela_inicial.html'> voltar </a>";
         }
+
+    }else{
+            echo "FAVOR PREENCHER TODOS OS CAMPOS";
+            echo "<a href = 'tela_inicial.html'> voltar </a>";
+    }
 
  }else{
     die("Erro na conexão: " . mysqli_connect_error());
