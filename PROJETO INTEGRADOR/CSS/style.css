@@ -34,8 +34,6 @@ body{
   height: 450px;
   background: var(--p-17);
   box-shadow: 1px 1px black;
-  padding: 20px;
-
 }
 .container .form-box{
   position: absolute;
