@@ -1,0 +1,191 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+:root{ --p-01: rgb(14, 167, 14);
+       --p-02: rgb(16,108,32);
+       --p-03: rgb(15,116,34);
+       --p-04: rgb(12,100,28);
+       --p-05: rgb(11, 94, 24);
+       --p-06: rgb(9, 86, 20);
+       --p-07: rgb(8, 80, 16);
+       --p-08: rgb(6, 74, 12);
+       --p-09: rgba(17,117,34,255);
+       --p-10: rgb(4,68,12);
+       --p-11: rgb(6, 74, 12);
+       --p-12: rgba(19,121,36,255);
+       --p-13: rgba(20,124,38,255);
+       --p-14: rgba(21,126,40,255);
+       --p-15: #7ED957;
+       --p-16: #0097B2;
+       --p-17: #ffffff;
+}
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background:linear-gradient(var(--p-16), var(--p-15)) ;   
+}
+.container{
+  position: relative;
+  width: 750px;
+  height: 450px;
+  background: var(--p-17);
+  box-shadow: 1px 1px black;
+}
+.container .form-box{
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background:none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  padding: 0 40px;
+  text-align: center;
+}
+.form-box h2{
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+}
+.form-box .input{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 10% 0;
+  background: none;
+}
+.input input{
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: solid 2px black;
+  border-radius: 8px;
+  outline: none;
+}
+.input label{
+  position: absolute;
+  top: -28%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: black;
+}
+.btn{
+position: relative;
+width: 100%;
+height: 45px;
+background-color: var(--p-01);
+border-radius: 20px;
+color: #fff;
+font-size: 16px;
+outline: none;
+cursor: pointer;
+}
+.form-box .links{
+  text-align: center;
+  margin: 20px 0 10px;
+}
+.links a{
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.links a:hover{
+  text-decoration: underline;
+}
+.container .column-right{
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  background: #0097B2;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.column-right a{
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+p{
+  padding: 0 20px;
+}
+.column-right a:hover{
+  text-decoration: underline;
+}
+
+/*Tudo sobre o dropdown --- do SIGNUP  */
+.dropdown {
+          position: relative;
+          display: inline-block;
+          padding: 5em;
+          margin-bottom: 24em;
+        }
+        
+        .dropdown-button {
+          background-color: #f9f9f9;
+          color: #333;
+          border: none;
+          cursor: pointer;
+          font-size: 1em;
+          font-weight: 800;
+          display: flex;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          width: 100%;
+          max-width: 300px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          padding: 4% 2%;
+          z-index: 1;
+        }
+        
+        .dropdown-content form {
+          width: 100%;
+        }
+        
+        .dropdown-content label {
+          display: block;
+          margin-bottom: 3%;
+        }
+        
+        .dropdown-content input,
+        .dropdown-content select {
+          width: 100%;
+          padding: 2%;
+          margin-bottom: 5%;
+        }
+        
+        .dropdown-content input[type="submit"] {
+          background-color: #333;
+          color: #fff;
+          border: none;
+          padding: 4% 8%;
+          cursor: pointer;
+        }
+        
+        .dropdown-content input[type="submit"]:hover {
+          background-color: #555;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        /*ACABA AQUI O DROPDOWN  */ 
