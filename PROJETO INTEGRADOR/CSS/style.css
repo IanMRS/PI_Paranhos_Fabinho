@@ -26,7 +26,7 @@ body{
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background:linear-gradient(var(--p-16), var(--p-15)) ;   
+        background:radial-gradient(circle at 0% 0%, var(--p-16), var(--p-15)) ;   
 }
 .container{
   position: relative;
@@ -44,8 +44,7 @@ body{
   justify-content: center;
   text-align: center;
   left: 0;
-  padding: 20px 20px; 
-  border:  2px solid black;
+  padding: 35px 20px; 
 }
 .form-box h2{
   font-size: 32px;
@@ -65,6 +64,7 @@ body{
   border: solid 2px black;
   border-radius: 8px;
   outline: none;
+  padding-left: 10px;
 }
 .input label{
   position: absolute;
@@ -103,18 +103,18 @@ cursor: pointer;
   top: 0;
   width: 40%;
   height: 100%;
-  background: #0097B2;
+  background: none;
   right: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: #000000;
 }
 .column-right a{
   font-size: 16px;
-  color: #ffffff;
+  color: #949494;
   text-decoration: none;
   font-weight: 600;
 }
@@ -124,12 +124,30 @@ p{
 .column-right a:hover{
   text-decoration: underline;
 }
+.linha{
+  position: relative;
+}
+.linha::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #000;
+  transform: translateX(-50%);
+}
+.img{
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
 
 /*Tudo sobre o dropdown --- do SIGNUP  */
 .dropdown {
           position: relative;
           display: inline-block;
-          padding: 5em;
+          padding: 3em;
           margin-bottom: 24em;
         }
         
