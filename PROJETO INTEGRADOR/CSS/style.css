@@ -29,25 +29,33 @@ body{
         background:radial-gradient(circle at 0% 0%, var(--p-16), var(--p-15)) ;   
 }
 .container{
-  position: relative;
-  width: 750px;
-  height: 450px;
+  position: absolute;
+  width: 80%;
+  height: 85%;
   background: var(--p-17);
   box-shadow: 1px 1px black;
 }
-.container .form-box{
-  position: absolute;
+.container .column-left{
+  
   width: 60%;
   height: 100%;
   background:none;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   left: 0;
-  padding: 35px 20px; 
+  padding: 9% 5%; 
+}
+.container .form-box{
+  background: none;
+  border-radius: 10px; /* Adicione bordas arredondadas para um efeito mais suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adicione a sombra com desfoque */
+  padding: 3% 5%;
+
 }
 .form-box h2{
-  font-size: 32px;
+  font-size: 3em;
   color: rgb(0, 0, 0);
 }
 .form-box .input{
@@ -147,8 +155,8 @@ p{
 .dropdown {
           position: relative;
           display: inline-block;
-          padding: 3em;
-          margin-bottom: 24em;
+          padding: 1em;
+          margin-bottom: 20em;
         }
         
         .dropdown-button {
