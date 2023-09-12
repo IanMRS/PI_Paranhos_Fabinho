@@ -17,8 +17,13 @@
                             novoCampoProfessor.className = "professor";
             
                             novoCampoProfessor.innerHTML = `
-                                <input type="text" name="nome-professor[]" class="nome-professor" placeholder="Nome do Professor">
-                                <input type="email" name="email-professor[]" class="email-professor" placeholder="Email do Professor">
+                            <input type="text" name="nome-professor[]" class="nome-professor" id="nome-professor" placeholder="Nome do Professor">
+                              <label for="nome-professor">Nome do Docente Envolvido: </label>
+
+                              <input type="email" name="email-professor[]" class="email-professor" id="email-professor" placeholder="Email do Professor">
+                              <label for="email-professor">E-mail do Docente Envolvido:</label>
+
+
                                 <button type="button" onclick="removerCampoProfessor(this)">-</button>`;
             
                             container.appendChild(novoCampoProfessor);
@@ -37,8 +42,11 @@
                     <form action="seu_script.php" method="post">
                               <div id="professores">
                                   <div class="professor">
-                                      <input type="text" name="nome-professor[]" class="nome-professor" placeholder="Nome do Professor">
-                                      <input type="email" name="email-professor[]" class="email-professor" placeholder="Email do Professor">
+                                      <input type="text" name="nome-professor[]" class="nome-professor" id="nome-professor" placeholder="Nome do Professor">
+                                      <label for="nome-professor">Nome do Docente Envolvido: </label>
+
+                                      <input type="email" name="email-professor[]" class="email-professor" id="email-professor" placeholder="Email do Professor">
+                                      <label for="email-professor">E-mail do Docente Envolvido:</label>
                                       <!-- O campo de nome e email do professor inicial -->
                                   </div>
                               </div>
@@ -52,6 +60,22 @@
                               <br>
                               <input id="data-final" type="date">
                               <label for="data-final">Data Final</label>
+                              <br>
+                              <label for="motivo">Motivo do Requerimento:</label>
+                                  <select id="motivo" name="motivo" required>
+                                    <option value="JF">Justificar Falta</option>
+                                    <option value="2C">2° Chamada</option>
+                                  </select>
+                                  <br>
+
+                              <input type="file" name="anexo" id="anexo">
+                              <label for="anexo">Anexos</label>
+                              <br>
+                              <div class="alter">
+                              <label for="observacao">Observações</label>
+                              <input type="text" name="observacao" id="observacao">
+                              </div>
+                              
                           </form>
           </div>
           

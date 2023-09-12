@@ -174,11 +174,22 @@ p{
   justify-content: center;
   background-color: var(--p-17);
   width: 80%;
-  height: 15em;
+  height: 35em;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 1em;
+}
+#novo-requerimento input[type="file"]{
+  width: 20em;
+  height: 10em;
+  cursor: pointer;
+}
+.alter input[type="text"]{
+  width: 20em;
+  height: 10em;
+  cursor: pointer;
 }
 .professor {
   display: flex;
