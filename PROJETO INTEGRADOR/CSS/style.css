@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Rubik+Mono+One&display=swap');
 *{
           margin: 0;
           padding: 0;
           box-sizing: border-box;
 }
 :root{ --p-01: rgb(14, 167, 14);
-       --p-02: rgb(16,108,32);
+       --p-02: #00BF63;
        --p-03: rgb(15,116,34);
        --p-04: rgb(12,100,28);
        --p-05: rgb(11, 94, 24);
@@ -16,7 +17,7 @@
        --p-11: rgb(6, 74, 12);
        --p-12: rgba(19,121,36,255);
        --p-13: rgba(20,124,38,255);
-       --p-14: rgba(21,126,40,255);
+       --p-14: #F6F2F2;
        --p-15: #7ED957;
        --p-16: #0097B2;
        --p-17: #ffffff;
@@ -45,23 +46,25 @@ body{
   text-align: center;
   align-items: center;
   left: 0;
-  padding: 9% 5%; 
+  padding: 5em 5em; 
 }
 .container .form-box{
   background: none;
   border-radius: 10px; /* Adicione bordas arredondadas para um efeito mais suave */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adicione a sombra com desfoque */
   padding: 3% 5%;
+  height: 27em;
 
 }
 .form-box h2{
-  font-size: 3em;
+  font-size: 2.4em;
   color: rgb(0, 0, 0);
+  font-family: 'Roboto Slab', serif;
 }
 .form-box .input{
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 3em;
   margin: 10% 0;
   background: none;
 }
@@ -81,6 +84,7 @@ body{
   transform: translateY(-50%);
   font-size: 16px;
   color: black;
+  font-weight: bold;
 }
 .btn{
 position: relative;
@@ -132,24 +136,143 @@ p{
 .column-right a:hover{
   text-decoration: underline;
 }
-.linha{
+.img-login{
+  position: absolute;
+  top: 6.2em;
+  left: 7em;
+}
+.img-cadastro{
+  position: absolute;
+  top: 6.2em;
+  left: 10em;
+}
+.img-requerimento{
   position: relative;
+  top: 3em;
 }
-.linha::before {
-  content: '';
+/*Requerimento Site*/
+#requerimento{
+  flex-direction: column;
+  text-align: center;
+  background: var(--p-17);
+  height: 100vh;
+  width: 100vw;
+}
+.icon-requerimento{
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.icon-requerimento a{
+  text-decoration: none;
+}
+/*Novo Requerimento*/
+#novo-requerimento{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--p-17);
+  width: 80%;
+  height: 15em;
+  position: absolute;
+  top: 50%;
   left: 50%;
-  width: 1px;
-  background-color: #000;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
-.img{
-  position: absolute;
-  top: 25px;
-  left: 30px;
+.professor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  width: 25em;
 }
+
+.nome-professor,
+.email-professor {
+  width: 48%; /* Largura dos campos (ajuste conforme necessário) */
+  padding: 5px;
+  margin-bottom: 5px; /* Espaçamento entre os campos */
+}
+.professor button {
+  position: relative;
+  left: 2em;
+  background-color: var(--p-15); /* Cor do botão (altere conforme necessário) */
+  color: white; /* Cor do texto do botão */
+  border: none;
+  cursor: pointer;
+  width: 5%; /* Largura do botão*/
+}
+
+
+/*NAVEGADOR DA LATERAL ESQUERDA*/
+nav{
+  width: 20%;
+  height: 100vh;
+  background: var(--p-14);
+  text-align: center;
+  left: 0;
+}
+hr{
+  position: relative;
+  top: 8%;
+  left: 25%;
+  width: 50%;
+}
+.ajustes{
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 32em;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  
+}
+.links-nav a{
+  position: relative;
+  cursor: pointer;
+  top: 5em;
+  text-decoration: none;
+}
+.links-nav a:hover{
+  text-decoration: underline;
+}
+.ajustes label{
+  margin: 0.2em;
+}
+.ajustes a{
+  cursor: pointer;
+  text-decoration: none;
+}
+.ajustes a:hover{
+  text-decoration: underline;
+}
+.btn-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  height: 2.8em;
+  background-color: var(--p-02);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  top: 33em;
+  border: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .btn-nav a{
+    text-decoration: none;
+  }
+  .btn-nav a:hover{
+    text-decoration: underline;
+  }
+
 
 /*Tudo sobre o dropdown --- do SIGNUP  */
 .dropdown {
@@ -174,7 +297,7 @@ p{
           position: absolute;
           background-color: #f9f9f9;
           width: 100%;
-          max-width: 300px;
+          max-width: 18.75;
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           padding: 4% 2%;
           z-index: 1;
