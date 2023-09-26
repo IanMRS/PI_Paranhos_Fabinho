@@ -1,83 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Novo Requerimento</title>
-          <link rel="stylesheet" href="/PROJETO INTEGRADOR/CSS/style.css">
-          <script> //GPT
-                    // Função para adicionar campos de professor
-                    function adicionarCampoProfessor() {
-                        var container = document.getElementById("professores");
-                        var camposProfessor = container.getElementsByClassName("professor");
-            
-                        // Verifica se o limite máximo de campos (20) não foi atingido
-                        if (camposProfessor.length < 20) {
-                            var novoCampoProfessor = document.createElement("div");
-                            novoCampoProfessor.className = "professor";
-            
-                            novoCampoProfessor.innerHTML = `
-                            <input type="text" name="nome-professor[]" class="nome-professor" id="nome-professor" placeholder="Nome do Professor">
-                              <label for="nome-professor">Nome do Docente Envolvido: </label>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Requerimento</title>
+    <link rel="stylesheet" href="/PROJETO INTEGRADOR/CSS/style.css">
+    <script> //GPT
+        // Função para adicionar campos de professor
+        function adicionarCampoProfessor() {
+            var container = document.getElementById("professores");
+            var camposProfessor = container.getElementsByClassName("professor");
 
-                              <input type="email" name="email-professor[]" class="email-professor" id="email-professor" placeholder="Email do Professor">
-                              <label for="email-professor">E-mail do Docente Envolvido:</label>
+            // Verifica se o limite máximo de campos (20) não foi atingido
+            if (camposProfessor.length < 20) {
+                var novoCampoProfessor = document.createElement("div");
+                novoCampoProfessor.className = "professor";
 
-
-                                <button type="button" onclick="removerCampoProfessor(this)">-</button>`;
-            
-                            container.appendChild(novoCampoProfessor);
-                        }
-                    }
-            
-                    // Função para remover campos de professor
-                    function removerCampoProfessor(botaoRemover) {
-                        var container = document.getElementById("professores");
-                        container.removeChild(botaoRemover.parentNode);
-                    }
-                </script>
-</head>
-<body>
-          <div id="novo-requerimento">
-                    <form action="seu_script.php" method="post">
-                              <div id="professores">
-                                  <div class="professor">
-                                      <input type="text" name="nome-professor[]" class="nome-professor" id="nome-professor" placeholder="Nome do Professor">
-                                      <label for="nome-professor">Nome do Docente Envolvido: </label>
-
-                                      <input type="email" name="email-professor[]" class="email-professor" id="email-professor" placeholder="Email do Professor">
-                                      <label for="email-professor">E-mail do Docente Envolvido:</label>
-                                      <!-- O campo de nome e email do professor inicial -->
-                                  </div>
-                              </div>
-                              <button type="button" onclick="adicionarCampoProfessor()">+</button>
-                              <br>
-                              <input type="submit" value="Enviar">
-                              <br>
-
-                              <input id="data-inicial" type="date">
-                              <label for="data-inicial">Data Inicial</label>
-                              <br>
-                              <input id="data-final" type="date">
-                              <label for="data-final">Data Final</label>
-                              <br>
-                              <label for="motivo">Motivo do Requerimento:</label>
-                                  <select id="motivo" name="motivo" required>
-                                    <option value="JF">Justificar Falta</option>
-                                    <option value="2C">2° Chamada</option>
-                                  </select>
-                                  <br>
-
-                              <input type="file" name="anexo" id="anexo">
-                              <label for="anexo">Anexos</label>
-                              <br>
-                              <div class="alter">
-                              <label for="observacao">Observações</label>
-                              <input type="text" name="observacao" id="observacao">
-                              </div>
+                novoCampoProfessor.innerHTML = `
+                <label for="nome-professor">Nome do Docente Envolvido: </label>            
+                <input type="text" name="nome-professor[]" class="nome-professor" id="nome-professor" placeholder="Nome do Professor">
                               
-                          </form>
-          </div>
-          
+                <label for="email-professor">E-mail do Docente Envolvido:</label>
+                <input type="email" name="email-professor[]" class="email-professor" id="email-professor" placeholder="Email do Professor">
+                              
+
+
+                <button type="button" onclick="removerCampoProfessor(this)">-</button>`;
+
+                container.appendChild(novoCampoProfessor);
+            }
+        }
+
+        // Função para remover campos de professor
+        function removerCampoProfessor(botaoRemover) {
+            var container = document.getElementById("professores");
+            container.removeChild(botaoRemover.parentNode);
+        }
+    </script>
+</head>
+
+<body>
+    
+        <form action="seu_script.php" method="post">
+            <div id="novo-requerimento">
+            <div id="professores">
+                <div class="professor">
+                    <!-- O campo de nome e email do professor inicial -->
+                    <label for="nome-professor">Nome do Docente Envolvido: </label>
+                    <input type="text" name="nome-professor[]" class="nome-professor" id="nome-professor"
+                        placeholder="Nome do Professor">
+
+
+                    <label for="email-professor">E-mail do Docente Envolvido:</label>
+                    <input type="email" name="email-professor[]" class="email-professor" id="email-professor"
+                        placeholder="Email do Professor">
+
+                    
+                </div>
+                <button type="button" onclick="adicionarCampoProfessor()">+</button>
+            </div>
+
+            <div id="direito-requerimento">
+
+
+                <div class="dates">
+                    <input id="data-inicial" type="date">
+                    <label for="data-inicial">Data Inicial</label>
+                </div>
+                <input id="data-final" type="date">
+                <label for="data-final">Data Final</label>
+                <br>
+                <label for="motivo">Motivo do Requerimento:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="JF">Justificar Falta</option>
+                    <option value="2C">2° Chamada</option>
+                </select>
+                <br>
+
+                <input type="file" name="anexo" id="anexo">
+                <label for="anexo">Anexos</label>
+                <br>
+                <div class="alter">
+                    <label for="observacao">Observações</label>
+                    <input type="text" name="observacao" id="observacao">
+                <input type="submit" value="Enviar">
+                </div>
+            </div>
+
+        </div>
+        </form>
+    
+
+
 </body>
+
 </html>
