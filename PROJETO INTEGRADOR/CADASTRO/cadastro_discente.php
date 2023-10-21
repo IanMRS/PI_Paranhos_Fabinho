@@ -23,4 +23,6 @@
 
     mysqli_close($conexao);
 
+
+    setcookie("possui_login", "true", time()+60*60*24);
 ?>
