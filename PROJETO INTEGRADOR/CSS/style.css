@@ -170,22 +170,20 @@ p{
 /*Novo Requerimento*/
 #novo-requerimento{
   display: flex;
+  flex-direction: row;
+}
+#professores{
+  background: var(--p-14);
+  padding: 0.5em;
+  
+}
+#direito-requerimento{
   text-align: center;
-  justify-content: center;
-  background-color: var(--p-17);
-  width: 80%;
-  height: 35em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1em;
 }
-#novo-requerimento input[type="file"]{
-  width: 20em;
-  height: 10em;
-  cursor: pointer;
+.dates{
+  ;
 }
+
 .alter input[type="text"]{
   width: 20em;
   height: 10em;
@@ -196,24 +194,21 @@ p{
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 10px;
-  width: 25em;
+  width: 100%; /* Altere para ajustar conforme necessário */
 }
 
 .nome-professor,
 .email-professor {
-  width: 48%; /* Largura dos campos (ajuste conforme necessário) */
-  padding: 5px;
-  margin-bottom: 5px; /* Espaçamento entre os campos */
+  width: 80%; /* Largura dos campos (ajuste conforme necessário) */
+  padding: 1px;
+  margin-bottom: 0.1em; /* Espaçamento entre os campos */
 }
 .professor button {
-  position: relative;
-  left: 2em;
-  background-color: var(--p-15); /* Cor do botão (altere conforme necessário) */
-  color: white; /* Cor do texto do botão */
+  background-color: var(--p-15);
+  color: white;
   border: none;
   cursor: pointer;
-  width: 5%; /* Largura do botão*/
+  width: auto; /* Ajuste a largura conforme necessário */
 }
 
 
