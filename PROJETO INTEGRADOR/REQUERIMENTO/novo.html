@@ -65,11 +65,13 @@
 
 
                 <div class="dates">
-                    <input id="data-inicial" type="date">
                     <label for="data-inicial">Data Inicial</label>
+                    <input id="data-inicial" type="date" name="data-inicial">
+                    
                 </div>
-                <input id="data-final" type="date">
                 <label for="data-final">Data Final</label>
+                <input id="data-final" type="date" name="data-final">
+                
                 <br>
                 <label for="motivo">Motivo do Requerimento:</label>
                 <select id="motivo" name="motivo" required>
@@ -78,17 +80,20 @@
                 </select>
                 <br>
 
-                <input type="file" name="anexo" id="anexo">
                 <label for="anexo">Anexos</label>
+                <input type="file" name="anexo" id="anexo">
+                
                 <br>
                 <div class="alter">
                     <label for="observacao">Observações</label>
                     <input type="text" name="observacao" id="observacao">
-                <input type="submit" value="Enviar">
+                
                 </div>
             </div>
-
+            <input type="submit" value="Cancelar">
+            <input type="submit" value="Enviar">  
         </div>
+        
         </form>
     
 
