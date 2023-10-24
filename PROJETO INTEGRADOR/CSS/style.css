@@ -168,6 +168,9 @@ p{
   text-decoration: none;
 }
 /*Novo Requerimento*/
+input{
+  cursor: pointer;
+}
 #novo-requerimento{
 
   display: flex;
@@ -197,11 +200,15 @@ p{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: space-between;
 }
 .dates{
  width: 30%;
  height: 30%;
- 
+}
+.dates input[type="date"]:hover{
+  border: 5px black solid;
+  cursor: pointer;
 }
 .selects{ /*Caixa de Anexos e Motivo do requerimento*/
   width: 60%;
@@ -211,6 +218,7 @@ p{
   display: none;
 }
 .selects .anexo{
+  cursor: pointer;
   display: block;
   align-self: center;
   width: 16em;
