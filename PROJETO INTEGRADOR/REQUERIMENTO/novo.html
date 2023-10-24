@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novo Requerimento</title>
     <link rel="stylesheet" href="/PROJETO INTEGRADOR/CSS/style.css">
+    <script src="/PROJETO INTEGRADOR/JS/app.js" defer></script>
     <script> //GPT
         // Função para adicionar campos de professor
         function adicionarCampoProfessor() {
@@ -86,8 +87,9 @@
     
                 <label for="anexo">Anexos:</label>
                 <br>
-                <label for="anexo" class="anexo">Clique aqui duas vezes ou arraste seu arquivo para esta caixa</label>
                 <input type="file" name="anexo" id="anexo">
+                <label for="anexo" class="anexo">
+                    <span class="arquivo_anexado">Clique aqui duas vezes ou arraste seu arquivo para esta caixa</span></label>
             </div></div>
 
             <div class="alter">
