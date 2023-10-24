@@ -169,25 +169,68 @@ p{
 }
 /*Novo Requerimento*/
 #novo-requerimento{
+
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 #professores{
   background: var(--p-14);
   padding: 0.5em;
+  width: 20em;
   
 }
 #direito-requerimento{
-  text-align: center;
+  width: 70%;
+  background-color: #ff0101;
+  justify-content: space-between;
+
+
+}
+#cax{
+  display: flex;
+  padding: 10px;
+  width: 28em;
+  height: 25em;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+.parte_de_cima{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .dates{
-  ;
+ width: 30%;
+ height: 30%;
+ background-color: #333;
+}
+.selects{ /*Caixa de Anexos e Motivo do requerimento*/
+  width: 60%;
+  height: 30%;
+  background: #007d93;
+  
+
+}
+.selects input[type="file"]{
+  display: none;
+}
+.selects .anexo{
+  align-self: center;
+  width: 5em;
+  border: 1px solid black;
+  text-align: center;
+}
+.alter{
+  background-color: #7ED957;
+  height: 60%;
 }
 
 .alter input[type="text"]{
   width: 20em;
   height: 10em;
   cursor: pointer;
+  
+  
 }
 .professor {
   display: flex;
@@ -204,11 +247,25 @@ p{
   margin-bottom: 0.1em; /* Espaçamento entre os campos */
 }
 .professor button {
-  background-color: var(--p-15);
-  color: white;
+  background: none;
   border: none;
   cursor: pointer;
   width: auto; /* Ajuste a largura conforme necessário */
+}
+.input{
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+}
+.input input[type="submit"]{
+
+  justify-content: center;
+  align-self: flex-end;
+  width: 5em;
+  height: 2em;
+  
+
 }
 
 
