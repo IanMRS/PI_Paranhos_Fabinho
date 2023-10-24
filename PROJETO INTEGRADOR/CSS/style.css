@@ -180,11 +180,9 @@ p{
   
 }
 #direito-requerimento{
+  display: flex;
   width: 70%;
-  background-color: #ff0101;
-  justify-content: space-between;
-
-
+  justify-content: end;
 }
 #cax{
   display: flex;
@@ -193,6 +191,7 @@ p{
   height: 25em;
   background-color: #f9f9f9;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .parte_de_cima{
   display: flex;
@@ -202,14 +201,11 @@ p{
 .dates{
  width: 30%;
  height: 30%;
- background-color: #333;
+ 
 }
 .selects{ /*Caixa de Anexos e Motivo do requerimento*/
   width: 60%;
   height: 30%;
-  background: #007d93;
-  
-
 }
 .selects input[type="file"]{
   display: none;
@@ -221,18 +217,7 @@ p{
   border: 1px solid black;
   text-align: center;
 }
-.alter{
-  background-color: #7ED957;
-  height: 60%;
-}
 
-.alter input[type="text"]{
-  width: 20em;
-  height: 10em;
-  cursor: pointer;
-  
-  
-}
 .professor {
   display: flex;
   flex-direction: column;
@@ -253,20 +238,34 @@ p{
   cursor: pointer;
   width: auto; /* Ajuste a largura conforme necessário */
 }
-.input{
+.alter{
+  display: flex;
+  height: 13em;
+}
+
+.alter input[type="text"]{
+  width: 20em;
+  height: 15em;
+  cursor: pointer;
+
+}
+.input_novo{
   display: flex;
   justify-content: flex-end;
-  text-align: center;
-  align-items: center;
+
 }
-.input input[type="submit"]{
+.input_novo input[type="submit"]{
+  background: none;
+  cursor: pointer;
+  width: 7em;
+  height: 4em;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-left: 10px;
+}
 
-  justify-content: center;
-  align-self: flex-end;
-  width: 5em;
-  height: 2em;
-  
-
+.input_novo input[type="submit"]:hover{
+  background: #f9f9f9;
 }
 
 
