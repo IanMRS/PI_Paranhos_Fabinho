@@ -215,8 +215,9 @@ p{
   display: none;
 }
 .selects .anexo{
+  display: block;
   align-self: center;
-  width: 5em;
+  width: 16em;
   border: 1px solid black;
   text-align: center;
 }
